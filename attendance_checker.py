@@ -20,6 +20,7 @@ def check_eligibility(attendance):
 
 def main():
     student_name = input("Enter student name: ")
+    student_course = input("Enter student course: ")
 
     try:
         total_classes = int(input("Enter total classes held: "))
@@ -36,6 +37,7 @@ def main():
         attendance = calculate_attendance(total_classes, attended_classes)
 
         print("\nStudent Name:", student_name)
+        print("Course:", student_course)
         print("Attendance Percentage:", round(attendance, 2), "%")
         print(check_eligibility(attendance))
 
